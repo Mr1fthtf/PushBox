@@ -1,0 +1,241 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICO_MAIN                ICON                    "Res\\Main.ico"
+ICO_MSG                 ICON                    "Res\\Msg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "载入地图(&O)\tCtrl+O",            IDM_LOAD_MAP
+        MENUITEM SEPARATOR
+        MENUITEM "地图管理",                        IDM_MAP_MGR
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)\tAlt+F4",              IDM_EXIT
+    END
+    POPUP "游戏(&G)"
+    BEGIN
+        MENUITEM "重新开始(&R)\tCtrl+R",            IDM_REPLAY
+        MENUITEM "上一关卡(&P)\tCtrl+P",            IDM_PREV
+        MENUITEM "下一关卡(&N)\tCtrl+N",            IDM_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "转到关卡(&J)\tCtrl+J",            IDM_JUMP
+        MENUITEM SEPARATOR
+        MENUITEM "后退一步(&Z)\tCtrl+Z",            IDM_UNSTEP
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                   IDM_ABOUT
+        MENUITEM "帮助(&H)",                      IDM_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG 65, 50, 130, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "推箱子"
+FONT 9, "宋体"
+BEGIN
+    ICON            ICO_MSG,IDC_STATIC,10,11,20,20
+    CTEXT           "Just Fancy",IDC_STATIC,47,10,41,8
+    DEFPUSHBUTTON   "确定(&O)",IDOK,68,49,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,6,43,115,1
+    LTEXT           "just_fancy@live.com",IDC_STATIC,47,20,77,8
+    LTEXT           "Dec 14 - 17, 2010",IDC_STATIC,47,33,69,8
+END
+
+IDD_GOTO DIALOGEX 0, 0, 76, 31
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "转到"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,20,9,28,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "1",IDC_STATIC,8,12,8,8
+    LTEXT           "1",IDS_MAX_GATE,53,12,16,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDC_TOOLBAR             BITMAP                  "Res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+MANIFEST_RESOURCE_ID    RT_MANIFEST             "Res\\PushBox.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 69
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 24
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS
+BEGIN
+    "J",            IDM_JUMP,               VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_NEXT,               VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_LOAD_MAP,           VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_PREV,               VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_REPLAY,             VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_UNSTEP,             VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "QQ551907703 | Just_Fancy@live.com"
+            VALUE "FileDescription", "推箱子游戏"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PushBox.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2010"
+            VALUE "OriginalFilename", "PushBox.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDM_REPLAY              "重新开始当前关卡"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_PREV                "上一关卡"
+    IDM_NEXT                "下一关卡"
+    IDM_ABOUT               "关于"
+    IDM_EXIT                "退出"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
